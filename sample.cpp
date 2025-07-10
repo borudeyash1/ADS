@@ -8,12 +8,12 @@ int countZeros(const int arr[], int size) {
     int low = 0, high = size - 1;
     int firstZeroIndex = size;  // Default: no zero found
 
-    while (low <= high) {
+    while(low <= high) {
         int mid = low + (high - low) / 2;         // Calculate mid index avoiding overflow (low + high) / 2 can overflow when low and high are large values.
-        if (arr[mid] == 0) {
+        if(arr[mid] == 0) {
             firstZeroIndex = mid;
             high = mid - 1;
-        } else {
+        }else {
             low = mid + 1;
         }
     }
@@ -21,8 +21,9 @@ int countZeros(const int arr[], int size) {
     return size - firstZeroIndex;
 }
 
+
 int main() {
-    int arr[] = {1, 1, 1, 0, 0, 0, 0};
+    int arr[] = {1, 1,0, 1, 0, 0, 1, 0};
     int size = sizeof(arr) / sizeof(arr[0]);
     cout << "Number of zeros: " << countZeros(arr, size) << endl;
 
