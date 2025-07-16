@@ -15,7 +15,7 @@ int countZeros(const int arr[], int size){
             high = mid - 1;
         }else{
             low = mid + 1;
-        }
+        }    
     }
 
     return size - firstZeroIndex;
@@ -24,7 +24,7 @@ int countZeros(const int arr[], int size){
 
 int main() {
     int arr[] = {1, 1,0, 1, 0, 0, 1, 0};
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);     //int has 4 bit size .
     cout << "Number of zeros: " << countZeros(arr, size) << endl;
 
     return 0;
