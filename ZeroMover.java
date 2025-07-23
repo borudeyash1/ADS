@@ -43,12 +43,12 @@ public class ZeroMover {
             }
         }
 
-        // Copy remaining elements from left half
+        // Copy  left half
         while (leftIdx < leftHalf.length) {
             nums[mergedIdx++] = leftHalf[leftIdx++];
         }
 
-        // Copy remaining elements from right half
+        // Copy  right half
         while (rightIdx < rightHalf.length) {
             nums[mergedIdx++] = rightHalf[rightIdx++];
         }
