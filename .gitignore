@@ -1,3 +1,8 @@
 .exe
 *.exe
 /.vscode
+.vscode/
+*.vscode
+.class
+*.class
+*.jar

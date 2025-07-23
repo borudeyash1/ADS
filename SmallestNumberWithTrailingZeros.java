@@ -8,9 +8,9 @@ public class SmallestNumberWithTrailingZeros {
         int high = 5 * n; 
         int answer = 0;
         
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-            int zeros = countLastZeroes(mid);
+while (low <= high) {
+    int mid = low + (high - low) / 2;
+        int zeros = countLastZeroes(mid);
             
             if (zeros >= n) {
                 answer = mid;
@@ -32,10 +32,8 @@ public class SmallestNumberWithTrailingZeros {
     }
 
     public static void main(String[] args) {
-        int n1 = 1;
-        System.out.println("Input: " + n1 + " Output: " + findSmallestNumber(n1));
-        
-        int n2 = 6;
-        System.out.println("Input: " + n2 + " Output: " + findSmallestNumber(n2));
+        int n = 5; 
+        int result = findSmallestNumber(n);
+        System.out.println("The smallest number with at least " + n + " trailing zeroes in its factorial is: " + result);
     }
 }
