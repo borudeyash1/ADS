@@ -5,12 +5,12 @@ public class SmallestNumberWithTrailingZeros {
             return 0;
         }
         int low = 0;
-        int high = 5 * n; // A safe upper bound
+        int high = 5 * n; 
         int answer = 0;
         
         while (low <= high) {
             int mid = low + (high - low) / 2;
-            int zeros = countTrailingZeros(mid);
+            int zeros = countLastZeroes(mid);
             
             if (zeros >= n) {
                 answer = mid;
@@ -22,7 +22,7 @@ public class SmallestNumberWithTrailingZeros {
         return answer;
     }
     
-    private static int countTrailingZeros(int num) {
+    private static int countLastZeroes(int num) {
         int count = 0;
         while (num > 0) {
             num /= 5;
