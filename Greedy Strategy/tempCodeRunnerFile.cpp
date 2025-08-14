@@ -49,7 +49,7 @@ int main()
     for (int i = 0; i < N; ++i)
         idx[i] = i;
 
-    // Sort indices based on S[idx[i]] 
+    // Sort indices based on S[idx[i]]
     sort(idx, idx + N, [&](int a, int b)
          { return S[a] < S[b]; });
 
