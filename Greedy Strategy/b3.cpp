@@ -26,27 +26,27 @@ int main(){
     int N;
     cout<<"Enter Number of Task : ";
     cin>>N;
-    int arr[N];    //to store the work done for particular task
+    int arr[N];    
     int count =0;
     cout<<"Enter Work Required for each task";
     for(int i =0;i<N;i++){
         cin>>arr[i];
     }
-    //Step 1 : Sort the Array in ascending order
+    
     sort(arr, arr + N);
 
-    //step 2 :
-    float tempresult; 
+   
+    float result; 
     for(int i =0;i<N;i++){
-        count = 0; // ✅ FIXED: reset count at start of each i loop
+        count = 0; 
 
         for(int j =0;j<N;j++){
-            tempresult = (float)arr[j] / arr[i]; // ✅ FIXED: force float division
-            count += ceil(tempresult);
+            result = (float)arr[j] / arr[i]; 
+            count += ceil(result);
         }
 
         if(count<= D){
-            cout<<"result : "<<arr[i]<<endl; // ✅ FIXED: was arr[i+1], caused out of bounds
+            cout<<"result : "<<arr[i]<<endl; 
             break;
         }
     }
