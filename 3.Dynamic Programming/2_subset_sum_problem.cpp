@@ -1,6 +1,7 @@
 /*Subset Sum Problem
 
-Given an array arr[] of non-negative integers and a value sum, the task is to check if there is a subset of the given array whose sum is equal to the given sum. 
+Given an array arr[] of non-negative integers and a value sum, the task is to check if there is a subset of the given 
+array whose sum is equal to the given sum. 
 
 Examples: 
 

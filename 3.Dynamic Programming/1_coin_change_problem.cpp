@@ -27,7 +27,7 @@ int countRecur(int n, int sum, int coins[]) {
     if (sum == 0) return 1;
 
     // 0 ways in the following two cases
-    if (sum < 0 || n == 0) return 0;
+    if (sum < 0 || n <= 0) return 0;
 
     // count is sum of solutions (i)
     
@@ -43,11 +43,11 @@ int main() {
     int n = 3;
     int sum = 5;
     int coins[] = {1, 2, 3};
-    cout << "Number of ways to sum up to " << sum << " using coins {";
+    cout << "Number of ways to sum up to " << sum << " using coins ";
     for(int i = 0; i < n; i++) {
         cout << coins[i] << " ";
     }
-    cout << "}: " << count(n, sum, coins) << endl;
+    cout <<  count(n, sum, coins) << endl;
     return 0;
 }
 
