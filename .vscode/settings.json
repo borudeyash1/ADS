@@ -60,6 +60,7 @@
     "*.dbclient-js": "javascript",
     "iostream": "cpp",
     "ostream": "cpp",
-    "cmath": "cpp"
+    "cmath": "cpp",
+    "algorithm": "cpp"
   }
 }
